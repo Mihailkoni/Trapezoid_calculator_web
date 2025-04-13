@@ -47,6 +47,28 @@ button {
     font-weight: bold;
 }
 
-select.error {
+#calculateOptions {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#calculateOptions label {
+    display: block;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+#calculateOptions input {
+    width: auto;
+    margin-right: 10px;
+}
+
+#calculateOptions.error {
     border: 2px solid red;
+}
+
+.hidden {
+    display: none;
 }

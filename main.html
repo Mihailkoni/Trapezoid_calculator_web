@@ -10,9 +10,8 @@
     <div class="calculator">
         <h1>Калькулятор прямоугольной трапеции</h1>
 
-    <!--вставить кортинку-->
         <div id="imageContainer">
-            <img id="trapezoidImage" src="" alt="Прямоугольная трапеция">
+            <img id="trapezoidImage" src="src\images\image_trapezoid_main.svg" alt="Прямоугольная трапеция">
         </div>
 
         <label for="inputType">Тип входных данных:</label>
@@ -22,7 +21,7 @@
         </select>
         <button id="showButton">Показать</button>
 
-        <div id="inputFields">
+        <div id="inputFields" class="hidden">
             <label for="base1">Основание 1 (a):</label>
             <input type="number" id="base1" placeholder="Введите основание 1">
             <label for="base2">Основание 2 (b):</label>
@@ -31,20 +30,19 @@
             <input type="number" id="sideOrHeight" placeholder="Введите боковую сторону или высоту">
         </div>
 
-        <!--переделать на checkbox-->
-        <label for="calculateOptions">Вычислить:</label>
-        <select id="calculateOptions" multiple>
-            <option value="area">Площадь</option>
-            <option value="angles">Углы</option>
-            <option value="perimeter">Периметр</option>
-        </select>
+        <label id="calculateLabel" class="hidden">Вычислить:</label>
+        <div id="calculateOptions" class="hidden">
+            <label><input type="checkbox" name="calculation" value="area" checked> Площадь</label>
+            <label><input type="checkbox" name="calculation" value="angles" checked> Углы</label>
+            <label><input type="checkbox" name="calculation" value="perimeter" checked> Периметр</label>
+        </div>
 
-        <button id="calculateButton">Вычислить</button>
-        <button id="clearButton">Очистить</button>
+        <button id="calculateButton" class="hidden">Вычислить</button>
+        <button id="clearButton" class="hidden">Очистить</button>
 
-        <div id="results"></div>
+        <div id="results" class="hidden"></div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="JavaScript\script.js"></script>
 </body>
 </html>
