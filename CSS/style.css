@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.calculator {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+button {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#imageContainer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#trapezoidImage {
+    max-width: 100%;
+    height: auto;
+}
+
+#results {
+    margin-top: 20px;
+}
+
+.error {
+    border: 2px solid red;
+}
+
+.error-text {
+    color: red;
+    font-weight: bold;
+}
+
+select.error {
+    border: 2px solid red;
+}
